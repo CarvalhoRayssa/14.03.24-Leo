@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", cursive;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.calculadora-container{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    margin: 0 auto;
+    padding: 10px; 
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #f9daff;
+    box-shadow: 2px 2px 5px  0.1px ;
+}
+
+.calculadora-input{
+    width: 92%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgb(230, 143, 230);
+}
+
+.calculadora-botoes{
+    display: grid;/*grid é grade */
+    grid-template-columns: repeat(4, 2fr);
+    gap: 10px;/*espaço*/
+    padding-top: 5px;
+    border-radius: 5px;
+}
+
+.calculadora-botao{
+    padding: 15px;
+    font-size: 18px;
+    background-color: rgb(206, 147, 255);
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0.1px;
+    transition:transform 0.5
+}
+
+.calculadora-botao:hover{
+    background-color: rgb(142, 21, 199);
+    transform: translateY(2px);
+}
+
+.calculadora-botao-operador{
+    background-color: rgb(101, 101, 196);
+}
